@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+
+    &::-webkit-scrollbar {display: none;}
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+
+    .blinder-container {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        display: flex;
+
+        .blinder {
+            background: #8da8a2;
+            height: 100vh;
+            flex: 1;
+            transform-origin: top;
+        }
+    }
+
+    svg {
+        position: absolute;
+        margin: auto;
+        top: 0; right: 0; bottom: 0; left: 0;
+        width: 80px;
+    }
+}
+
+
+.drip-loader {
+    animation: animateDrip 1s infinite;
+}
+
+section {
+    padding: 10vw;
+    
+    .mask {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        overflow: hidden;
+        
+        h1 {
+            white-space: nowrap;
+            font-size: 5vw;
+            letter-spacing: -2px;
+        }
+    }
+
+}
+
+
+
+@keyframes animateDrip {
+    to {
+        transform: translateY(200px);
+    }
+}

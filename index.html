@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="css/main.scss">
+</head>
+
+<body>
+
+
+  <div class="loader">
+    <div class="blinder-container">
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+      <div class="blinder"></div>
+    </div>
+
+    <svg viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+
+      <mask id="mask0_103_12" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="145" height="145">
+        <circle cx="72.5" cy="72.5" r="72.5" fill="white" />
+      </mask>
+      <g mask="url(#mask0_103_12)" filter="url(#goo)">
+        <circle cx="72.5" cy="72.5" r="68.5" stroke="white" stroke-width="8" />
+        <circle cx="72.5" cy="-57.5" r="91.5" fill="white" />
+        <path class="drip-loader" d="M74.1354 -4.29465C73.6741 -5.23512 72.3259 -5.23512 71.8646 -4.29465L63.4934 12.7728C63.4856 12.7887 63.4782 12.8047 63.4711 12.8207C61.9211 14.8301 61 17.3441 61 20.0718C61 26.6596 66.3726 32 73 32C79.6274 32 85 26.6596 85 20.0718C85 17.3441 84.0789 14.8301 82.5289 12.8207C82.5218 12.8047 82.5144 12.7887 82.5066 12.7728L74.1354 -4.29465Z" fill="white" />
+      </g>
+    </svg>
+  </div>
+
+  <section>
+    <div class="mask">
+      <h1>So snazzy.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus similique consequatur deserunt facere
+        dolorum, omnis inventore consectetur numquam rem tenetur.</p>
+    </div>
+  </section>
+
+  <img
+    src="https://images.unsplash.com/photo-1705254649341-2ea457cb79cc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    style="display:none" alt="pic">
+
+
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
